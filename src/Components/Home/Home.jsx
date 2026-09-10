@@ -8,8 +8,10 @@ import {
 } from "react-icons/fa";
 import Offers from "./Offers";
 import Switches from "./Switches";
+import Accessories from "./Accessories";
+import Products from "./Products";
 
-
+import MovingLine from "./movingline";
 
 
 
@@ -204,82 +206,12 @@ const Home = () => {
 
       </div>
 
-    
+    <Accessories />
+        <div className="py-10 px-40">
+      <h2 className=" text-4xl font-bold">Keyboards</h2></div>
 
-{/* items card 1 */}
-  <div className="flex px-24 gap-6 text-black">
-
-      <div className=" ">
-
-        <div className="card bg-white  shadow-xl w-[304px] h-[304px] p-2 ">
-          <figure>
-            <img className="w-full"
-              src="https://woodmart.xtemos.com/keyboards/wp-content/uploads/sites/36/2026/04/kac-category-accessories-430x430.jpg.webp"
-              alt="Shoes" />
-          </figure>
-
-          <h2 className="card-title ">Accessories</h2>
-
-          <button>16 products</button>    
-        </div>
-
-      </div>
-
-{/* items card 2 */}
-
-      <div className="px-">
-
-        <div className="card bg-white  shadow-xl w-[304px] h-[304px] p-2 ">
-          <figure>
-            <img className="w-full"
-              src="https://woodmart.xtemos.com/keyboards/wp-content/uploads/sites/36/2026/04/kac-category-keyboards-430x430.jpg.webp"
-              alt="Shoes" />
-          </figure>
-
-          <h2 className="card-title ">Accessories</h2>
-
-          <button>16 products</button>    
-        </div>
-
-      </div>
-
-{/* items card 3 */}
-
-      <div className="">
-
-        <div className="card bg-white  shadow-xl w-[304px] h-[304px] p-2 ">
-          <figure>
-            <img className="w-full"
-              src="https://woodmart.xtemos.com/keyboards/wp-content/uploads/sites/36/2026/04/kac-category-keycaps-430x430.jpg.webp"
-              alt="Shoes" />
-          </figure>
-
-          <h2 className="card-title ">Accessories</h2>
-
-          <button>16 products</button>    
-        </div>
-
-      </div>
-
-{/* items card 4*/}
-
-      <div className="">
-
-        <div className="card bg-white  shadow-xl w-[304px] h-[304px] p-2 ">
-          <figure>
-            <img className="w-full"
-              src="https://woodmart.xtemos.com/keyboards/wp-content/uploads/sites/36/2026/04/kac-category-switches-430x430.jpg.webp"
-              alt="Shoes" />
-          </figure>
-
-          <h2 className="card-title text-lg  ">Accessories</h2>
-
-          <button>16 products</button>    
-        </div>
-
-      </div>
-
-    </div>
+<Products/>
+<MovingLine></MovingLine>
 
  <div className="py-24 px-24">
       <h2 className="mb-8 text-4xl font-bold">Keyboards</h2>
