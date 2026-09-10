@@ -8,6 +8,8 @@ import {
 } from "react-icons/fa";
 import Offers from "./Offers";
 import Switches from "./Switches";
+import Community from "./Community";
+import Footer from "../Footer";
 
 
 
@@ -327,9 +329,12 @@ const Home = () => {
 
  <div className=" px-16  ">
   <Offers></Offers>
-  <Switches></Switches>
 
  </div>
+
+ <Switches></Switches>
+ <Community></Community>
+ <Footer></Footer>
 
     </div>
   );
