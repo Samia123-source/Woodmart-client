@@ -9,32 +9,32 @@ const products = [
   {
     cat: "subtitle",
     title: "Keyboard",
-    image: "https://woodmart.xtemos.com/keyboards/wp-content/uploads/sites/36/2026/04/akko-v3-matcha-green-pro-linear-switches.jpeg.webp",
-       image2: "https://woodmart.xtemos.com/keyboards/wp-content/uploads/sites/36/2026/04/akko-v3-matcha-green-pro-linear-switches-1.jpeg",
+    image: "https://woodmart.xtemos.com/keyboards/wp-content/uploads/sites/36/2026/04/dbt-milk--honey-430x491.jpeg.webp",
+       image2: "https://woodmart.xtemos.com/keyboards/wp-content/uploads/sites/36/2026/04/dbt-milk--honey-1.jpeg",
        price: "$400",
        rating: "4.0"
   },
   {
     cat: "subtitle",
     title: "Keyboard",
-    image: "https://woodmart.xtemos.com/keyboards/wp-content/uploads/sites/36/2026/04/durock-shrimp-silent-tactile-switches-1.jpeg",
-       image2: "https://woodmart.xtemos.com/keyboards/wp-content/uploads/sites/36/2026/04/durock-shrimp-silent-tactile-switches-2.jpeg",
+    image: "https://woodmart.xtemos.com/keyboards/wp-content/uploads/sites/36/2026/04/lofree-retro-430x491.jpeg.webp",
+       image2: "https://woodmart.xtemos.com/keyboards/wp-content/uploads/sites/36/2026/04/lofree-retro-1.jpeg",
        price: "$400",
        rating: "4.0"
   },
   {
     cat: "subtitle",
     title: "Keyboard",
-    image: "https://woodmart.xtemos.com/keyboards/wp-content/uploads/sites/36/2026/04/durock-silent-linear-switches-430x491.jpeg.webp",
-       image2: "https://woodmart.xtemos.com/keyboards/wp-content/uploads/sites/36/2026/04/durock-silent-linear-switches-1.jpeg",
+    image: "https://woodmart.xtemos.com/keyboards/wp-content/uploads/sites/36/2026/04/melgeek-horseman-430x491.jpeg.webp",
+       image2: "https://woodmart.xtemos.com/keyboards/wp-content/uploads/sites/36/2026/04/melgeek-horseman-1.jpeg",
        price: "$400",
        rating: "4.0"
   },
   {
     cat: "subtitle",
     title: "Keyboard",
-    image: "https://woodmart.xtemos.com/keyboards/wp-content/uploads/sites/36/2026/04/gateron-ef-grayish-tactile-switches-430x491.jpeg.webp",
-       image2: "https://woodmart.xtemos.com/keyboards/wp-content/uploads/sites/36/2026/04/gateron-ef-grayish-tactile-switches-1.jpeg",
+    image: "https://woodmart.xtemos.com/keyboards/wp-content/uploads/sites/36/2026/04/melgeek-label-430x491.jpeg.webp",
+       image2: "https://woodmart.xtemos.com/keyboards/wp-content/uploads/sites/36/2026/04/melgeek-label-1.jpeg",
        price: "$400",
        rating: "4.0"
   },
@@ -71,20 +71,20 @@ function ProductCard({ title, image, cat , price,rating,image2 }) {
 }
 
 
-const Switches = () => {
+const Keycaps = () => {
   return (
 
-    <div>
+   <div>
       <div className="px-20 py-10 text-5xl text-black font-bold">   
-        <p>Switches</p>
+        <p>KeyCaps</p>
     </div>
            <div className="flex flex-row px-20 gap-5">
       {products.map((item, index) => (
         <ProductCard key={index} title={item.title} image={item.image} image2={item.image2} cat={item.cat} price={item.price} rating={item.rating}  />
       ))}
     </div>
-    </div>
+   </div>
   )
 }
 
-export default Switches
+export default Keycaps

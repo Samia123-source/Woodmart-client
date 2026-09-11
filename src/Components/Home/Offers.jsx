@@ -3,7 +3,7 @@ import { FaArrowAltCircleDown, FaArrowRight } from "react-icons/fa"
 
 const Offers = () => {
   return (
-    <div className="bg-[#242424] px-16 py-20 rounded-lg w-[1370px] h-[1200px]  ">
+    <div className="bg-[#242424] px-16 py-20 rounded-2xl w-[1370px] h-[1200px]  ">
             <p className="text-4xl text-white font-bold pb-16">Profitable offers. <span className="text-gray-500"> Switches, keycaps, custom assemblies create your perfect build.</span></p>
         <div className="card card-side bg-[#bfbdbd] shadow-xl ">
         

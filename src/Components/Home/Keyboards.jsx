@@ -1,46 +1,46 @@
-
 import { FaStar } from "react-icons/fa";
 import {
   FaSearch, 
   FaRegHeart,
   FaShoppingCart,
 } from "react-icons/fa";
+
+
 const products = [
   {
-    cat: "subtitle",
-    title: "Keyboard",
-    image: "https://woodmart.xtemos.com/keyboards/wp-content/uploads/sites/36/2026/04/akko-v3-matcha-green-pro-linear-switches.jpeg.webp",
-       image2: "https://woodmart.xtemos.com/keyboards/wp-content/uploads/sites/36/2026/04/akko-v3-matcha-green-pro-linear-switches-1.jpeg",
+    cat: "Keyboard",
+    title: "Akko 3108 SP",
+    image: "https://woodmart.xtemos.com/keyboards/wp-content/uploads/sites/36/2026/04/akko-3108-sp-430x491.jpeg.webp",
+    image2: "https://woodmart.xtemos.com/keyboards/wp-content/uploads/sites/36/2026/04/akko-3108-sp-1.jpeg",
        price: "$400",
        rating: "4.0"
   },
   {
-    cat: "subtitle",
-    title: "Keyboard",
-    image: "https://woodmart.xtemos.com/keyboards/wp-content/uploads/sites/36/2026/04/durock-shrimp-silent-tactile-switches-1.jpeg",
-       image2: "https://woodmart.xtemos.com/keyboards/wp-content/uploads/sites/36/2026/04/durock-shrimp-silent-tactile-switches-2.jpeg",
+    cat: "Keyboard",
+    title: "Akko Cinnamoroll Star 5108B Plus",
+    image: "https://woodmart.xtemos.com/keyboards/wp-content/uploads/sites/36/2026/04/akko-cinnamoroll-star-5108b-plus.jpeg.webp",
+       image2: "https://woodmart.xtemos.com/keyboards/wp-content/uploads/sites/36/2026/04/akko-cinnamoroll-star-5108b-plus-1.jpeg",
        price: "$400",
        rating: "4.0"
   },
   {
-    cat: "subtitle",
-    title: "Keyboard",
-    image: "https://woodmart.xtemos.com/keyboards/wp-content/uploads/sites/36/2026/04/durock-silent-linear-switches-430x491.jpeg.webp",
-       image2: "https://woodmart.xtemos.com/keyboards/wp-content/uploads/sites/36/2026/04/durock-silent-linear-switches-1.jpeg",
+    cat: "Keyboard",
+    title: "Iqunix super ZONEX 75",
+    image: "https://woodmart.xtemos.com/keyboards/wp-content/uploads/sites/36/2026/04/iqunix-super-zonex-75-430x491.jpeg.webp",
+       image2: "https://woodmart.xtemos.com/keyboards/wp-content/uploads/sites/36/2026/04/akko-cinnamoroll-star-5108b-plus-1.jpeg",
        price: "$400",
        rating: "4.0"
   },
   {
-    cat: "subtitle",
-    title: "Keyboard",
-    image: "https://woodmart.xtemos.com/keyboards/wp-content/uploads/sites/36/2026/04/gateron-ef-grayish-tactile-switches-430x491.jpeg.webp",
-       image2: "https://woodmart.xtemos.com/keyboards/wp-content/uploads/sites/36/2026/04/gateron-ef-grayish-tactile-switches-1.jpeg",
+    cat: "Kyboard",
+    title: " Kalam eUnikorn Purple PVD",
+    image: "https://woodmart.xtemos.com/keyboards/wp-content/uploads/sites/36/2026/04/kalam-unikorn-purple-pvd-430x491.jpeg.webp",
+       image2: "https://woodmart.xtemos.com/keyboards/wp-content/uploads/sites/36/2026/04/kalam-unikorn-purple-pvd-1.jpeg",
        price: "$400",
        rating: "4.0"
   },
  
 ];
-
 
 function ProductCard({ title, image, cat , price,rating,image2 }) {
   return (
@@ -54,7 +54,7 @@ function ProductCard({ title, image, cat , price,rating,image2 }) {
         style={{ backgroundImage: `url(${image2})` }}
       />
      <div className="absolute bg-none text-black top-0 left-0 right-0 p-5  overflow-hidden duration-300 ">
-        <p className="font-bold text-lg ">{title}</p>
+        <p className="font-bold text-base ">{title}</p>
         <p>{cat}</p>
       </div>
        <div className="absolute bg-none text-black bottom-0 left-0 right-0 px-5 h-10 overflow-hidden duration-300 group-hover:h-20">
@@ -70,21 +70,19 @@ function ProductCard({ title, image, cat , price,rating,image2 }) {
   );
 }
 
-
-const Switches = () => {
+function Keyboards() {
   return (
-
-    <div>
+     <div>
       <div className="px-20 py-10 text-5xl text-black font-bold">   
-        <p>Switches</p>
+        <p>Keyboards</p>
     </div>
-           <div className="flex flex-row px-20 gap-5">
+    <div className="flex flex-row px-16 gap-5 ml-6">
       {products.map((item, index) => (
         <ProductCard key={index} title={item.title} image={item.image} image2={item.image2} cat={item.cat} price={item.price} rating={item.rating}  />
       ))}
     </div>
-    </div>
-  )
+</div>
+  );
 }
 
-export default Switches
+export default Keyboards

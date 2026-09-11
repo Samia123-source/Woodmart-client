@@ -11,7 +11,7 @@ const Community = () => {
               <p className="text-4xl text-white mb-8">Join our community, <span className="text-gray-400">discuss, share, and be the first to learn about new products and sales.</span></p>
              <div className="flex gap-2">
                  <input type="text" name="email" placeholder="    Your Email Address" className="bg-white w-3/4 h-12  rounded-3xl" />
-               <button className="bg-blue-500 w-24 rounded-3xl">Sign Up</button>
+               <button className="bg-blue-500 w-24 text-white rounded-3xl">Sign Up</button>
             
              </div>
              <p className="text-base text-white mt-8">Will be used in accordance with our Privacy Policy</p>

@@ -10,6 +10,13 @@ import Offers from "./Offers";
 import Switches from "./Switches";
 import Community from "./Community";
 import Footer from "../Footer";
+import MovingSlide from "./MovingSlide";
+
+import Keyboards from "./Keyboards";
+import Keycaps from "./Keycaps";
+import Products from "./Products";
+import Accessories from "./Accessories";
+
 
 
 
@@ -20,7 +27,7 @@ const Home = () => {
     <div className="bg-gray-200 min-h-screen">
 
       {/* ================= HERO TEXT SECTION ================= */}
-      <div className="flex flex-col lg:flex-row lg:gap-20 px-5 sm:px-8 lg:px-16 xl:px-24">
+      <div className="flex flex-col justify-between lg:flex-row lg:gap-20 px-5 mr-10 sm:px-8 lg:px-16 xl:px-24">
 
         {/* LEFT SIDE */}
         <div className="py-10 sm:py-14 lg:py-20 w-full lg:w-auto">
@@ -208,131 +215,32 @@ const Home = () => {
 
     
 
-{/* items card 1 */}
-  <div className="flex px-24 gap-6 text-black">
+{/* Accessories */}
 
-      <div className=" ">
+<Products></Products>
 
-        <div className="card bg-white  shadow-xl w-[304px] h-[304px] p-2 ">
-          <figure>
-            <img className="w-full"
-              src="https://woodmart.xtemos.com/keyboards/wp-content/uploads/sites/36/2026/04/kac-category-accessories-430x430.jpg.webp"
-              alt="Shoes" />
-          </figure>
+{/* Slider */}
 
-          <h2 className="card-title ">Accessories</h2>
-
-          <button>16 products</button>    
-        </div>
-
-      </div>
-
-{/* items card 2 */}
-
-      <div className="px-">
-
-        <div className="card bg-white  shadow-xl w-[304px] h-[304px] p-2 ">
-          <figure>
-            <img className="w-full"
-              src="https://woodmart.xtemos.com/keyboards/wp-content/uploads/sites/36/2026/04/kac-category-keyboards-430x430.jpg.webp"
-              alt="Shoes" />
-          </figure>
-
-          <h2 className="card-title ">Accessories</h2>
-
-          <button>16 products</button>    
-        </div>
-
-      </div>
-
-{/* items card 3 */}
-
-      <div className="">
-
-        <div className="card bg-white  shadow-xl w-[304px] h-[304px] p-2 ">
-          <figure>
-            <img className="w-full"
-              src="https://woodmart.xtemos.com/keyboards/wp-content/uploads/sites/36/2026/04/kac-category-keycaps-430x430.jpg.webp"
-              alt="Shoes" />
-          </figure>
-
-          <h2 className="card-title ">Accessories</h2>
-
-          <button>16 products</button>    
-        </div>
-
-      </div>
-
-{/* items card 4*/}
-
-      <div className="">
-
-        <div className="card bg-white  shadow-xl w-[304px] h-[304px] p-2 ">
-          <figure>
-            <img className="w-full"
-              src="https://woodmart.xtemos.com/keyboards/wp-content/uploads/sites/36/2026/04/kac-category-switches-430x430.jpg.webp"
-              alt="Shoes" />
-          </figure>
-
-          <h2 className="card-title text-lg  ">Accessories</h2>
-
-          <button>16 products</button>    
-        </div>
-
-      </div>
-
-    </div>
-
- <div className="py-24 px-24">
-      <h2 className="mb-8 text-4xl font-bold">Keyboards</h2>
-
-      <div className="relative w-[330px] h-[376px]">
-  <img
-    src="https://woodmart.xtemos.com/keyboards/wp-content/uploads/sites/36/2026/04/akko-3108-sp-430x491.jpeg.webp"
-    alt=""
-    className="w-full h-full object-cover rounded-2xl"
-  />
-
- 
-   <div className=" absolute border-black border w-[290px] h-[120px]  left-5 text-black top-3 w-">
-    <div>
-      <h2 className="text-lg font-bold">	Akko 3108 SP</h2>
-    <p className="text-sm">Keyboards</p>
-    </div>
-    <div className=" absolute w-[290px] h-[120px] mt-44 justify-between items-end border-black border flex">
-       <p className="  text-[#fb6a19] left-3 ">$74.99</p>
-
-       <p className="flex"> 5.00<FaStar></FaStar></p>
-    
-     
-     
-     
-      <div className="join join-vertical gap-4 rounded-md ">
-  <button className="join-item w-[20px] h-[20px]"><FaShoppingCart></FaShoppingCart></button>
-  <button className=" join-item w-[20px] h-[20px]"><FaSearch></FaSearch></button>
-  <button className=" join-item w-[20px] h-[20px]"><FaRegHeart></FaRegHeart></button>
-
-
-    </div>
-   
-    </div>
-    
-  
- </div>
-  
- 
+<div className=" py-16">
+  <MovingSlide></MovingSlide>
 </div>
-      
- </div>
+ 
+
+     {/* Keyboard */}
+
+ 
+<Keyboards></Keyboards>
 
 
+ <div className=" px-16 py-16  ">
 
- <div className=" px-16  ">
   <Offers></Offers>
 
  </div>
 
  <Switches></Switches>
+ <Keycaps></Keycaps>
+ <Accessories></Accessories>
  <Community></Community>
  <Footer></Footer>
 
