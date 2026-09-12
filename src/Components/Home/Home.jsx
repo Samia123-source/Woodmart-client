@@ -27,7 +27,7 @@ const Home = () => {
     <div className="bg-gray-200 min-h-screen">
 
       {/* ================= HERO TEXT SECTION ================= */}
-      <div className="flex flex-col justify-between lg:flex-row lg:gap-20 px-5 mr-10 sm:px-8 lg:px-16 xl:px-24">
+      <div className="flex flex-col justify-between lg:flex-row lg:gap-20 px-5  sm:px-8 lg:px-16 xl:px-24">
 
         {/* LEFT SIDE */}
         <div className="py-10 sm:py-14 lg:py-20 w-full lg:w-auto">
@@ -93,6 +93,7 @@ const Home = () => {
             h-[500px]
             sm:h-[540px]
             mx-auto
+        
             rounded-3xl
             bg-cover
             bg-center
@@ -100,7 +101,7 @@ const Home = () => {
             bg-[url('https://woodmart.xtemos.com/keyboards/wp-content/uploads/sites/36/2026/04/kac-hero-banner-1.jpg.webp')]
           "
         >
-          <Link>
+          <Link to='/keycapList'>
             <div className="text-black p-5 sm:p-6 pt-[280px] sm:pt-[320px]">
 
               <button className="rounded-2xl bg-blue-500 text-white px-4 py-1 text-sm">

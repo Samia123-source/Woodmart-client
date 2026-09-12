@@ -16,7 +16,7 @@ const Navbar = () => {
       </li>
 
       <li>
-        <NavLink className="hover:bg-orange-100 hover:text-orange-500">
+        <NavLink to='/keycapList' className="hover:bg-orange-100 hover:text-orange-500">
           Keykaps
         </NavLink>
       </li>

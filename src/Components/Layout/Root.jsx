@@ -1,12 +1,14 @@
 import { Outlet } from "react-router-dom"
 import Navbar from "../Home/Navbar"
+import Footer from "../Footer"
 
 
 const Root = () => {
   return (
-    <div className="bg-white">
+    <div className="bg-[#e9e9e9]">
         <Navbar></Navbar>
         <Outlet></Outlet>
+        <Footer></Footer>
        
     </div>
   )
