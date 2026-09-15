@@ -6,9 +6,9 @@ import Footer from "../Footer"
 const Root = () => {
   return (
     <div className="bg-[#e9e9e9]">
-        <Navbar></Navbar>
+        {/* <Navbar></Navbar> */}
         <Outlet></Outlet>
-        <Footer></Footer>
+        {/* <Footer></Footer> */}
        
     </div>
   )

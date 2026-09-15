@@ -4,6 +4,7 @@ import Home from "../Home/Home";
 
 import KeycapList from "../KeycapList";
 import KeycapDetails from "../Keycaps/KeycapDetails";
+import Responsive from "../Responsive";
 
 const routes = createBrowserRouter([
     {
@@ -22,7 +23,14 @@ const routes = createBrowserRouter([
         path:"/keycapDetails",
         element: <KeycapDetails></KeycapDetails>
 
+    },
+    {
+        path:"/responsive",
+        element: <Responsive></Responsive>
     }
+
+
+
 
         ]
     },
